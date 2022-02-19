@@ -1,3 +1,25 @@
 # Wordle-Clone
 
-Python Wordle Terminal Clone v1.0
+# _**How To Play**_
+
+WORDLE'i 6 denemede bulun.
+
+Her tahmin 5 harfli doğru bir kelime olmalıdır. Göndermek için enter'a basın.
+
+Her tahminden sonra kutucukların renkleri tahmininizin yakınlığına göre değişecektir.
+
+### **Örnekler**
+
+![This is an image](True.png)
+
+#### _A harfi kelimede var ve doğru yerde._
+
+![This is an image](Wait.png)
+
+**_İ harfi kelimede var fakat yanlış yerde._**
+
+![This is an image](Wrong.png)
+
+ _**Z harfi kelimede yok.**_
+
+## **Her gün yeni bir WORDLE gelir!**
