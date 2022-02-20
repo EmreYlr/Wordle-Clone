@@ -38,7 +38,7 @@ lose_word = word
 word = word.upper()
 word = list(word)
 word.remove("\n")
-# print(word)  # WORD
+print(word)  # WORD
 print("WORDLE TR \n")
 char = \
     [["   ", "   ", "   ", "   ", "   "],
@@ -62,27 +62,35 @@ while check < 6:
     else:
         key = key.upper()
         key_list = list(key)
-        i = 0
         j = 0
+        k = 0
+        check_up = []
         cntr = 0  # Game win control
-        while i < 5:
-            if key[i] == word[i]:
-                char[x_axis][i] = Fore.LIGHTBLACK_EX + Back.GREEN + " " + key_list[i] + " " + Style.RESET_ALL
-                i += 1
+        while k < 5:
+            if key[k] == word[k]:
+                char[x_axis][k] = Fore.LIGHTBLACK_EX + Back.GREEN + " " + key_list[k] + " " + Style.RESET_ALL
                 cntr += 1
+                check_up.append(word[k])
+                k += 1
             else:
+                k += 1
+        k = 0
+        while k < 5:
+            if key[k] != word[k]:
                 while j < 5:
-                    if key[i] == word[j]:
-                        char[x_axis][i] = Fore.LIGHTBLACK_EX + Back.YELLOW + " " + key_list[i] + " " + Style.RESET_ALL
+                    if key[k] == word[j] and key[k] not in check_up:
+                        char[x_axis][k] = Fore.LIGHTBLACK_EX + Back.YELLOW + " " + key_list[k] + " " + Style.RESET_ALL
                         break
                     else:
                         j += 1
                         if j == 5:
-                            char[x_axis][i] = Back.LIGHTBLACK_EX + Fore.WHITE + " " + key_list[
-                                i] + " " + Style.RESET_ALL
-
+                            char[x_axis][k] = Back.LIGHTBLACK_EX + Fore.WHITE + " " + key_list[
+                                k] + " " + Style.RESET_ALL
                 j = 0
-                i += 1
+                k += 1
+            else:
+                k += 1
+
         clear()
         print(" +---+---+---+---+---+\n"
               " |{}|{}|{}|{}|{}|\n".format(char[0][0], char[0][1], char[0][2], char[0][3], char[0][4]),
