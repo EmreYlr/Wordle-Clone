@@ -10,15 +10,15 @@ Her tahminden sonra kutucukların renkleri tahmininizin yakınlığına göre de
 
 ### **Örnekler**
 
-![This is an image](True.png)
+![This is an image](PNG/True.png)
 
 #### _A harfi kelimede var ve doğru yerde._
 
-![This is an image](Wait.png)
+![This is an image](PNG/Wait.png)
 
 **_İ harfi kelimede var fakat yanlış yerde._**
 
-![This is an image](Wrong.png)
+![This is an image](PNG/Wrong.png)
 
  _**Z harfi kelimede yok.**_
 
