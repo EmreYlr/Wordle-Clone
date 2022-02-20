@@ -38,7 +38,7 @@ lose_word = word
 word = word.upper()
 word = list(word)
 word.remove("\n")
-print(word)  # WORD
+# print(word)  # WORD
 print("WORDLE TR \n")
 char = \
     [["   ", "   ", "   ", "   ", "   "],
