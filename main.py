@@ -8,8 +8,8 @@ def clear():
 
 
 def word_of_the_day():
-    f = open("word.txt", "r")
-    rand = random.randint(1, 4974)
+    f = open("daily_words.txt", "r")
+    rand = random.randint(1, 444)
     file = f.readlines()
     return file[rand]
 
